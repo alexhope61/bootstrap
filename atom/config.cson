@@ -1,0 +1,37 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+    use:
+      "atom-ide-diagnostics": "never"
+      "atom-ide-diagnostics-ui": "never"
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    enableAutoConfirmSingleSuggestion: false
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  core:
+    telemetryConsent: "limited"
+  disabledPackages: [
+    "atom-ide-diagnostics"
+  ]
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "7d12774c-0cb7-4d1f-81a3-5135edca6cd9"
+  "go-plus":
+    test:
+      coverageHighlightMode: "disabled"
+      runTestsOnSave: false
+      runTestsWithCoverage: false
+      runTestsWithShortFlag: false
+      runTestsWithVerboseFlag: true
+  "linter-ui-default":
+    showPanel: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
