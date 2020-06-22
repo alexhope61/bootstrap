@@ -7,11 +7,11 @@
 1. `brew install zsh`
 
 ### prezto
-1. Clone this repo `git clone --recursive git@github.com:alexhope61/bootstrap.git "${ZDOTDIR:-$HOME}/.bootstrap"`
+1. Clone this repo `git clone --recursive git@github.com:alexhope61/bootstrap.git "${ZDOTDIR:-$HOME}/.zprezto"`
 1. Symlink the dotfiles
 ```
   setopt EXTENDED_GLOB
-  for rcfile in "${ZDOTDIR:-$HOME}"/.bootstrap/runcoms/^README.md(.N); do
+  for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
     ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
   done
 ```
@@ -20,7 +20,7 @@
 1. Symlink the vim stuff
 ```
   setopt EXTENDED_GLOB
-  for vimfile in "${ZDOTDIR:-$HOME}"/.bootstrap/vim; do
+  for vimfile in "${ZDOTDIR:-$HOME}"/.zprezto/vim; do
     ln -s "$vimfile" "${ZDOTDIR:-$HOME}/.${vimfile:t}"
   done
 ```
@@ -29,7 +29,7 @@
 1. Symlink the bash stuff
 ```
   setopt EXTENDED_GLOB
-  for bashfile in "${ZDOTDIR:-$HOME}"/.bootstrap/bash; do
+  for bashfile in "${ZDOTDIR:-$HOME}"/.zprezto/bash; do
     ln -s "$bashfile" "${ZDOTDIR:-$HOME}/.${bashfile:t}"
   done
 ```
